@@ -2,23 +2,24 @@
   <div class="hello">
     {{ $route.params }}
     <div>a:{{ a }},b:{{ b }}</div>
-    <div>routeParams:{{ routeParams }}</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "User",
   props: {
     a: Number,
     b: Number,
-    routeParams: Object,
+  },
+  mounted() {
+    // this.$route.params.id = 12;
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 h3 {
   margin: 40px 0 0;
 }
