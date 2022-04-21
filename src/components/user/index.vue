@@ -1,7 +1,11 @@
 <template>
   <div class="hello">
-    {{ $route.params }}
+    <!-- $route.params:{{ $route.params }} -->
     <div>a:{{ a }},b:{{ b }}</div>
+    <!-- <button class="user-a" @click="$router.push({ name: 'uu' })">a</button> -->
+    <button class="user-a" @click="$router.push('/user/a')">a</button>
+    <button class="user-b" @click="$router.push('/user/b')">b</button>
+    <div class="view">view:<router-view></router-view></div>
   </div>
 </template>
 
